@@ -29,7 +29,7 @@ const MealDetailsScreen = ({ route , navigation}) => {
         headerRight:() =>{
             return (
               
-                <IconButton onPress={handlePress}/>
+                <IconButton IconName={"heart"} onPress={handlePress} size={20} color={'white'}/>
             )
         }
     })

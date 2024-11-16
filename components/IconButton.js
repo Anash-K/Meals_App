@@ -2,10 +2,10 @@ import React from "react";
 import { Pressable, StyleSheet } from "react-native";
 import { FontAwesome5 } from "@expo/vector-icons";
 
-const IconButton = ({onPress}) => {
+const IconButton = ({IconName , onPress ,size ,color}) => {
   return (
     <Pressable style={styles.button} onPress={onPress}>
-      <FontAwesome5 name="utensils" size={24} color="white" />
+      <FontAwesome5 name={IconName} size={size} color={color} />
     </Pressable>
   );
 };
